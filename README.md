@@ -1,4 +1,4 @@
-# free_beers
+# free_beers.py
 
 "Free Beers" is perhaps the hackiest implementation of homography you can find on github, it serves one purpose and one purpose only, the aquisition of free alcoholic beverages. 
 
