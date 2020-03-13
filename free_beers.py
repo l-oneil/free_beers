@@ -34,8 +34,6 @@ def check_pts(p, pts):
 def inpolygon(img_points, target_shape):
     p = path.Path(img_points) 
 
-    print(target_shape)
-
     pts = []
     for y in range(target_shape[1]):
         for x in range(target_shape[0]):
