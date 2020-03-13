@@ -10,7 +10,7 @@ bottom_left  = [38,255]
 
 def main():
 
-    guney = np.array(plt.imread("images/guney.jpg"), dtype=np.float) * (1./255)
+    guney = np.array(plt.imread("images/dyson.jpg"), dtype=np.float) * (1./255)
     bed   = np.array(plt.imread("images/bed.png"), dtype=np.float)
 
     print("Bed Image Size: ", bed.shape)
@@ -34,24 +34,14 @@ def check_pts(p, pts):
 def inpolygon(img_points, target_shape):
     p = path.Path(img_points) 
 
+    print(target_shape)
+
     pts = []
     for y in range(target_shape[1]):
         for x in range(target_shape[0]):
             if check_pts(p, (x,y)):
                 pts.append([x,y])
     return np.array(pts)
-
-def calculate_interior_pts(img_points):
-    x_range = range(top_left[0], top_right[0])
-    y_range = range(top_left[1], bottom_right[1])
-
-    sample_pts = []
-
-    for y in y_range:
-        for x in x_range:
-            sample_pts.append(np.array([x,y])) 
-
-    return(np.array(sample_pts))
 
 def est_homography(img_pts, gun_pts):
 
