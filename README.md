@@ -12,9 +12,9 @@ python3 free_beers.py
 
 
 An example input for free beers would be:
-![alt text](https://github.com/l-oneil/free_beers_please/blob/master/images/guney.jpg)
+![alt text](https://github.com/l-oneil/free_beers/blob/master/images/guney.jpg)
 
 An example output for free beers would be:
-![alt text](https://github.com/l-oneil/free_beers_please/blob/master/images/guney.jpg)
+![alt text](https://github.com/l-oneil/free_beers/blob/master/images/output.png)
 
 
