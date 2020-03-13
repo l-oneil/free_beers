@@ -57,10 +57,10 @@ def est_homography(img_pts, gun_pts):
 
     A = []
     for i in range(len(img_pts)):
-        xv = img_pts[i][0];
-        yv = img_pts[i][1];
-        xl = gun_pts[i][0];
-        yl = gun_pts[i][1];
+        xv = img_pts[i][0]
+        yv = img_pts[i][1]
+        xl = gun_pts[i][0]
+        yl = gun_pts[i][1]
         ax = [ -xv, -yv, -1, 0, 0, 0, xv*xl, yv*xl, xl]
         ay = [ 0, 0, 0, -xv, -yv, -1, xv*yl, yv*yl, yl]
 
