@@ -96,7 +96,6 @@ def warp_pts(img_points, gun_points, target_shape):
 
 def inverse_warping(bed, guney, sample_pts, warped_pts):
     pts_final   = np.array(np.ceil(sample_pts), dtype=int)
-
     pts_initial = np.array(np.ceil(warped_pts),dtype=int)
     
     nPts = sample_pts.shape[0]
